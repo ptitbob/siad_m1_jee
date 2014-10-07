@@ -1,6 +1,38 @@
-target/
+# ignore list
+
+# default ignore list
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Netbeans
+core
+nbproject/*
+!nbproject/project.properties
+!nbproject/project.xml
+
+# Mac
+.DS_Store
+
+# Maven specifique
+log/
+target/
+
+# java specific
+*.class
+
+# ant specific
+dist/
+build/
