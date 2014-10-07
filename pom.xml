@@ -6,7 +6,12 @@
 
 	<groupId>fr.univ.blois.siad.m1.javaee</groupId>
 	<artifactId>siad_m1_jee</artifactId>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
+
+	<modules>
+		<module>cdi</module>
+	</modules>
 
 	<properties>
 		<version.java>1.8</version.java>
