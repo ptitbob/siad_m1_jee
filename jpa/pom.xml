@@ -11,5 +11,21 @@
 
 	<artifactId>jpa</artifactId>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>org.eclipse.persistence.jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.tinylog</groupId>
+			<artifactId>tinylog</artifactId>
+		</dependency>
+
+	</dependencies>
 
 </project>
