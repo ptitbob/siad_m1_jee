@@ -12,6 +12,7 @@
 	<modules>
 		<module>cdi</module>
 		<module>jpa</module>
+		<module>validation</module>
 	</modules>
 
 	<properties>
