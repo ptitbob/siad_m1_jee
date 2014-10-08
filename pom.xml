@@ -15,15 +15,19 @@
 
 	<properties>
 		<version.java>1.8</version.java>
+
 		<!-- Java EE -->
 		<version.glassfish>4.0-b87</version.glassfish>
-		<version.javaee>7.0-b79</version.javaee>
+		<version.javaee>7.0</version.javaee>
 		<version.weld>2.1.1.Final</version.weld>
 		<version.jersey>2.0-rc1</version.jersey>
 		<version.eclipselink>2.5.0</version.eclipselink>
 		<version.hibernate.validator>5.0.1.Final</version.hibernate.validator>
 		<version.el>3.0-b07</version.el>
 		<version.json>1.0-b05</version.json>
+        
+        <!-- other -->
+        <junit.version>4.11</junit.version>
 	</properties>
 
 	<dependencyManagement>
@@ -88,13 +92,6 @@
 				<version>${version.mysql}</version>
 			</dependency>
 
-			<!-- test -->
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.11</version>
-			</dependency>
-
 			<!-- tools -->
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -104,6 +101,16 @@
 		</dependencies>
 	</dependencyManagement>
 
+    <dependencies>
+        <!-- test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 	<build>
 		<plugins>
 			<plugin>
