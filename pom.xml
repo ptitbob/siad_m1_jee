@@ -26,8 +26,9 @@
 		<version.el>3.0-b07</version.el>
 		<version.json>1.0-b05</version.json>
         
-        <!-- other -->
+    <!-- other -->
         <junit.version>4.11</junit.version>
+	    <tinylog.version>0.9.1</tinylog.version>
 	</properties>
 
 	<dependencyManagement>
@@ -97,6 +98,11 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.tinylog</groupId>
+				<artifactId>tinylog</artifactId>
+				<version>${tinylog.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
