@@ -14,10 +14,10 @@ public class TestServiceUser02 extends SiadTest {
 
 	@Test
 	public void validateInitializeRandomNumber() {
-		ServiceUser01 serviceUser01 = null;
-		assertNotNull("L'instance ne doit pas être nulle", serviceUser01);
-		assertNotNull("le nombre doit être affecté", serviceUser01.getRandomNumber());
-		assertTrue("Le nombre doit être compris de manière aléatoire entre 1 et 10", serviceUser01.getRandomNumber() > 1 && serviceUser01.getRandomNumber() <= 10);
+		ServiceUser02 serviceUser02 = null;
+		assertNotNull("L'instance ne doit pas être nulle", serviceUser02);
+		assertNotNull("le nombre doit être affecté", serviceUser02.getRandomNumber());
+		assertTrue("Le nombre doit être compris de manière aléatoire entre 1 et 10", serviceUser02.getRandomNumber() > 1 && serviceUser02.getRandomNumber() <= 10);
 	}
 
 }
