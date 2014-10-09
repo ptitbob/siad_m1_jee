@@ -1,12 +1,10 @@
 package fr.univ.blois.siad.m1.javaee.jpa.ex01;
 
 import fr.univ.blois.siad.m1.javaee.jpa.common.SiadTest;
-import org.eclipse.persistence.exceptions.DatabaseException;
 import org.junit.Test;
 import org.pmw.tinylog.Logger;
 
 import javax.persistence.PersistenceException;
-import javax.persistence.RollbackException;
 
 import static org.junit.Assert.fail;
 
