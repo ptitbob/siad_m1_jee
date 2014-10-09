@@ -43,4 +43,35 @@ public class Person {
 	public void setLogin(String login) {
 		this.login = login;
 	}
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Person)) return false;
+
+    Person person = (Person) o;
+
+    if (!id.equals(person.id)) return false;
+    if (!login.equals(person.login)) return false;
+    if (name != null ? !name.equals(person.name) : person.name != null) return false;
+
+    return true;
+  }
+
+  @Override
+  public int hashCode() {
+    int result = id.hashCode();
+    result = 31 * result + login.hashCode();
+    return result;
+  }
+
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder("Person{");
+    sb.append("id=").append(id);
+    sb.append(", name='").append(name).append('\'');
+    sb.append(", login='").append(login).append('\'');
+    sb.append('}');
+    return sb.toString();
+  }
 }
