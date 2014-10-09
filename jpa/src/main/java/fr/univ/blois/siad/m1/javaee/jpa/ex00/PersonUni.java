@@ -8,14 +8,14 @@ import javax.persistence.Id;
  * @author: François Robert
  */
 @Entity
-public class Person {
+public class PersonUni {
 	@Id
 	private Long id;
 
 	@Column
 	private String name;
 
-	public Person() {
+	public PersonUni() {
 	}
 
 	public Long getId() {
