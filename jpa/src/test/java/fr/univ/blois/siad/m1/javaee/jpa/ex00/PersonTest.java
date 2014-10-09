@@ -7,7 +7,10 @@ public class PersonTest extends SiadTest {
 
 	@Test
 	public void test() {
-		persist(new Person(1L, "test"));
+		Person person = new Person();
+		person.setId(1L);
+		person.setName("test");
+		persist(new Person());
 	}
 
 }
