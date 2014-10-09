@@ -37,6 +37,9 @@ public class PersonTest01 extends SiadTest {
 		}
 	}
 
+	/**
+	 * Test de verification de la non possibilité de mettre un nom à null
+	 */
 	@Test
 	public void testNameNotNull() {
 		Person person = new Person();
@@ -50,6 +53,9 @@ public class PersonTest01 extends SiadTest {
 		}
 	}
 
+	/**
+	 * Test de la non possibilité que le login soit null
+	 */
 	@Test
 	public void testLoginNotNull() {
 		Person person = new Person();
@@ -62,4 +68,6 @@ public class PersonTest01 extends SiadTest {
 			Logger.info("Succes du test de non nullité du login de la personne");
 		}
 	}
+
+
 }
