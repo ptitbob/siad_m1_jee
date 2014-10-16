@@ -10,7 +10,7 @@ public class PersonUniTest extends SiadTest {
 		PersonUni personUni = new PersonUni();
 		personUni.setId(1L);
 		personUni.setName("test");
-		persist(new PersonUni());
+		persist(personUni);
 	}
 
 }
