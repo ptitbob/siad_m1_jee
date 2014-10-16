@@ -23,7 +23,7 @@ public class PersonTest01 extends SiadTest {
 		person1.setName("person1");
 		person1.setLogin("a");
 		Person person2 = new Person();
-		person2.setId(1L);
+		person2.setId(2L);
 		person2.setName("person2");
 		person2.setLogin("a");
 		persist(person1);
