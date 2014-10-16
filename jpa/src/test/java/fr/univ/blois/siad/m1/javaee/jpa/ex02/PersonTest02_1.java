@@ -13,7 +13,7 @@ import static org.junit.Assert.fail;
 /**
  * @author: François Robert
  */
-public class PersonTest02 extends SiadTest {
+public class PersonTest02_1 extends SiadTest {
 
 	@Test
 	public void testInsertPersonWithoutId() {
@@ -34,6 +34,7 @@ public class PersonTest02 extends SiadTest {
 		} catch (PersistenceException e) {
 			fail("insetion impossible, l'id n'est pas fixé");
 		}
+		Assert.assertEquals("L'identifiant de la personne 1 doit être...", new Long(11), person2.getId());
 	}
 
 }
