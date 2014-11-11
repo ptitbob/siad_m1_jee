@@ -13,7 +13,7 @@ import static org.pmw.tinylog.Level.TRACE;
 
 
 /**
- * @author: François Robert
+ * @author : François Robert
  */
 public class SiadTest {
 
@@ -46,4 +46,5 @@ public class SiadTest {
 		entityTransaction.commit();
 		return entity;
 	}
+
 }
