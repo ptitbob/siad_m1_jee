@@ -4,6 +4,10 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>fr.univ.blois.siad.m1.javaee.jpa.ex00.PersonUni</class>
 		<class>fr.univ.blois.siad.m1.javaee.jpa.ex01.Person</class>
+		<class>fr.univ.blois.siad.m1.javaee.jpa.ex03.User</class>
+		<class>fr.univ.blois.siad.m1.javaee.jpa.ex03.Address</class>
+		<class>fr.univ.blois.siad.m1.javaee.jpa.ex03.Article</class>
+		<class>fr.univ.blois.siad.m1.javaee.jpa.ex03.Category</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/SIAD_M1"/>
