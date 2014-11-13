@@ -17,9 +17,7 @@ public class PersonManagerTest extends SiadTest {
     public void createPersonTest() {
         PersonManager personManager = getNestedInstance(PersonManager.class);
         assertNotNull(personManager);
-        assertTrue(personManager.isEntityManagerFilled());
-
-        personManager.persist(new Person(1L, "test", "test"));
+        // Placer votre code ici
     }
 
 

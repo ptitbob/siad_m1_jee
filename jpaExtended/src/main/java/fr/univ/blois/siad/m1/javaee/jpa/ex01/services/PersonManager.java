@@ -14,14 +14,6 @@ public class PersonManager {
     @Inject
     private EntityManager entityManager;
 
-    public boolean isEntityManagerFilled() {
-        return entityManager != null;
-    }
-
-    public void persist(Person person) {
-        EntityTransaction entityTransaction = entityManager.getTransaction();
-        entityTransaction.begin();
-        entityManager.persist(person);
-        entityTransaction.commit();
+    public PersonManager() {
     }
 }
