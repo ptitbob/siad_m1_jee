@@ -1,17 +1,22 @@
 package fr.univ.blois.siad.m1.javaee.jpa.ex01.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by francois on 13/11/14.
  */
+@TableGenerator(name="PERSON_TABLE_GENERATOR",
+        table="SEQUENCE_GENERATOR_TABLE",
+        pkColumnName= "SEQUENCE_NAME",
+        valueColumnName= "SEQUENCE_VALUE",
+        pkColumnValue= "PERSON_SEQUENCE")
 @Entity(name = "PERSON")
 public class Person {
 
     @Id
     @Column(name = "PERSON_ID")
+    @GeneratedValue(strategy=GenerationType.TABLE,
+            generator= "PERSON_TABLE_GENERATOR")
     private Long id;
 
     @Column(name = "PERSON_NAME")
@@ -21,6 +26,11 @@ public class Person {
     private String surname;
 
     public Person() {
+    }
+
+    public Person(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
     public Person(Long id, String name, String surname) {
