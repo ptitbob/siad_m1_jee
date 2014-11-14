@@ -10,7 +10,7 @@ import javax.persistence.*;
         pkColumnName= "SEQUENCE_NAME",
         valueColumnName= "SEQUENCE_VALUE",
         pkColumnValue= "PERSON_SEQUENCE")
-@Entity(name = "PERSON")
+@Entity
 public class Person {
 
     @Id
